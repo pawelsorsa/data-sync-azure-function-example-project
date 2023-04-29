@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataSynchronization.Application\DataSynchronization.Application.csproj" />
+    <ProjectReference Include="..\DataSynchronization.Configuration\DataSynchronization.Configuration.csproj" />
+    <ProjectReference Include="..\DataSynchronization.Infrastructure\DataSynchronization.Infrastructure.csproj" />
+    <ProjectReference Include="..\DataSynchronization.Storage\DataSynchronization.Storage.csproj" />
+  </ItemGroup>
+
+</Project>
